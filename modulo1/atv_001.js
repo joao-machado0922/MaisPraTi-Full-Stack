@@ -55,9 +55,9 @@ if (salario < 1500) {
 /* 4. Crie um programa que leia três números inteiros e exiba o maior deles, sem utilizar
 funções prontas como Math.max(). */
 
-let numero1 = Number(prompt("Digite o primeiro número: "));
-let numero2 = Number(prompt("Digite o segundo número: "));
-let numero3 = Number(prompt("Digite o terceiro número: "));
+let numero1 = parseInt(prompt("Digite o primeiro número: "));
+let numero2 = parseInt(prompt("Digite o segundo número: "));
+let numero3 = parseInt(prompt("Digite o terceiro número: "));
 
 if (numero1 > numero2 && numero1 > numero3) {
     console.log(`O maior número é ${numero1}`);
@@ -110,7 +110,7 @@ deseja sacar (múltiplo de 10). O programa deve calcular e exibir a menor
 quantidade possível de cédulas de R$ 100, R$ 50, R$ 20 e R$ 10 necessárias para
 compor o saque. */
 
-let valorSaque = Number(prompt("Digite um valor para sacar (múltiplo de 10) -> "));
+let valorSaque = parseInt(prompt("Digite um valor para sacar (múltiplo de 10) -> "));
 let notas100;
 let notas50;
 let notas20;

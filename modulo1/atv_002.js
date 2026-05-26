@@ -18,10 +18,40 @@ do {
 /* 2. Leia um número inteiro positivo e, usando um laço while, calcule e exiba quantos
 dígitos ele possui. Trate o caso do número zero (que possui 1 dígito). */
 
+/* let numeroInteiro = parseInt(prompt("Insira um número inteiro: "));
+let caracteres = [];
+let stringNumero;
 
+if (!numeroInteiro.isNaN && numeroInteiro >= 0) {
+    stringNumero = numeroInteiro.toString();
+    if (numeroInteiro == 0) {
+        caracteres.push("0");
+    } else {
+        for (let i = 0; i < stringNumero.length; i++) {
+            caracteres.push(stringNumero[i]);
+        }
+    }
+    console.log(`Esse número tem ${caracteres.length} caractere(s)`);
+} else {
+    console.log(`[ERRO] - INSIRA UM NÚMERO INTEIRO POSITIVO`);
+} */
 
 /* 3. Peça ao usuário quantos termos da sequência de Fibonacci deseja ver e exiba-os
 usando um laço for. Exemplo: 1, 1, 2, 3, 5, 8, 13... */
+
+/* let fiboUnd = parseInt(prompt("Quantos números da sequência de Fibonacci deseja ver? "));
+let fiboAtual = 1;
+let fiboAnterior = 1;
+
+for (let i = 0; i < fiboUnd; i++) {
+    if (i >= 2) {
+        fiboAtual = fiboAtual + fiboAnterior;
+        fiboAnterior = fiboAtual - fiboAnterior;
+        console.log(`${i + 1}º: ${fiboAtual}`);
+    } else {
+        console.log(`${i + 1}º: 1`);
+    }
+} */
 
 /* 4. Defina uma senha fixa no código. Peça ao usuário que a digite e, usando um laço
 do...while, permita no máximo 3 tentativas. Exiba se ele acertou ou se esgotou as
