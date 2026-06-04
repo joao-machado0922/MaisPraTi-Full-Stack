@@ -3,10 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mês dos Namorados</title>
+    <title>Nicolau Store</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: 1px solid;
+      }
+
+      td {
+        padding: 5px;
+      }
+
+      p, img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 100px;
+        margin: 4px;
+      }
+
+      img:hover {
+        width: 105px;
+      }
+
+      form {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        height: 125px;
+        background-color: rgb(236, 255, 253);
+        border-radius: 1rem;
+        padding: 1rem;
+        border: 1px solid grey;
+        margin: 1rem;
+      }
+
+      input {
+        margin: 10px 0px;
+      }
+
+      button {
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        width: 15%;
+        font-size: 16px;
+      }
+
+      button:hover {
+        width: 17%;
+        height: auto;
+      }
+
+    </style>
   </head>
   <body>
-    <h1>Vamo dale Grêmio</h1>
+    <h1>Lojinha do Balacobaco</h1>
+    <h2>Nossos produtos:</h2>
+    <form action="">
+      <label>Nome Completo:</label>
+      <input type="text" placeholder="Digite seu nome">
+      <label>Senha:</label>
+      <input type="password" placeholder="Digite sua senha">
+      <button type="submit">Login</button>
+    </form>
+    <progress value="75" max="100"></progress>
     <table>
       <tr>
         <th>Produto</th>
@@ -14,20 +84,21 @@
         <th>Categoria</th>
       </tr>
       <tr>
-        <td>Camiseta do Grêmio</td>
-        <td>R$ 125,99</td>
-        <td>Item de luxo</td>
+        <td><img src="assets/camisa_gremio.png" alt="Camiseta do Grêmio" /></td>
+        <td><p>R$ 125,99</p></td>
+        <td><p>Item de luxo</p></td>
       </tr>
       <tr>
-        <td>Nintendo 3ds versão de luxo</td>
-        <td>R$ 2.500,00</td>
-        <td>Raridade</td>
+        <td><img src="assets/nintendo_3ds.png" alt="Nintendo 3DS" /></td>
+        <td><p>R$ 2.500,00</p></td>
+        <td><p>Raridade</p></td>
       </tr>
       <tr>
-        <td>Camiseta do Inter</td>
-        <td>R$ 20,00</td>
-        <td>Pano de chão</td>
+        <td><img src="assets/camisa_inter.png" alt="Camiseta do Inter" /></td>
+        <td><p>R$ 20,00</p></td>
+        <td><p>Pano de chão</p></td>
       </tr>
     </table>
+    
   </body>
 </html>
