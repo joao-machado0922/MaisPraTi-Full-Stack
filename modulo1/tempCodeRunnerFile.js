@@ -1,5 +1,9 @@
-for (let i = 0; i < stringNumero.length; i++) {
-            caracteres.push(stringNumero[i]);
-            console.log(`index ${counterCaracteres} - ${stringNumero[counterCaracteres]} - ${typeof(stringNumero[counterCaracteres])}`)
-            counterCaracteres++;
-        }
+let livros = [
+    {titulo: "Casas Estranhas", autor: "Uketsu"},
+    {titulo: "Jurassic Park", autor: "Michael Crichton"}
+]
+
+
+for (const {titulo, autor} of livros) {
+    console.log(titulo, autor);
+}
