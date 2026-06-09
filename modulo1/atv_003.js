@@ -5,7 +5,7 @@ categoria e quantidade em estoque. Use for...in para percorrer e exibir todas as
 propriedades e seus valores. Em seguida, adicione uma nova propriedade
 desconto ao objeto e exiba o preço final calculado. */
 
-/* let produto = {
+let produto = {
     nome: "Camiseta do Grêmio edição colecionador 2002",
     preco: 1500,
     categoria: "Vestuário",
@@ -20,7 +20,7 @@ produto.desconto = 12;
 
 produto.preco = Number((produto.preco * (1 - (produto.desconto / 100))).toFixed(2));
 
-console.table(`Preço com ${produto.desconto}% de desconto: R$${produto.preco}`); */
+console.table(`Preço com ${produto.desconto}% de desconto: R$${produto.preco}`);
 
 /* ---------------------------------------------------------------------------------- */
 
@@ -29,7 +29,7 @@ propriedades: nome, vida, ataque e defesa. Use for...in para exibir os atributos
 cada personagem lado a lado e determine qual deles tem maior poder total
 (soma de vida + ataque + defesa). */
 
-/* const char1 = {
+const char1 = {
     nome: "Mega Charizard Y",
     vida: 78,
     ataque: 159,
@@ -63,7 +63,7 @@ if (totalChar1 > totalChar2) {
     console.log(`${char2.nome} tem a maior soma de status`);
 } else {
     console.log("EMPATE");
-} */
+}
 
 /* ---------------------------------------------------------------------------------- */
 
@@ -74,7 +74,7 @@ até 2 anos = 5% do salário,
 de 3 a 5 anos = 10%,
 acima de 5 anos = 15%. */
 
-/* const funcionario = {
+const funcionario = {
     nome: "João Pedro",
     cargo: "Desenvolvedor Back-end",
     salario: 3456.96,
@@ -91,7 +91,7 @@ if (funcionario.anosExperiencia > 5) {
     console.log(`Bônus de 10% - R$${(funcionario.salario * 1.10).toFixed(2)}`);
 } else if (funcionario.anosExperiencia >= 0) {
     console.log(`Bônus de 5% - R$${(funcionario.salario * 1.05).toFixed(2)}`);
-} */
+}
 
 /* ---------------------------------------------------------------------------------- */
 
@@ -100,7 +100,7 @@ no inventário do jogador (ex: { espada: 1, poção: 5, escudo: 2 }). Use for...
 listar o inventário completo. Permita que o usuário informe um item para usar:
 reduza a quantidade em 1 ou exiba "item esgotado" se for zero. */
 
-/* const inventario = {
+const inventario = {
     rareCandy: 1,
     revive: 2,
     potion: 24,
@@ -132,7 +132,7 @@ do {
         }
         console.log("----------------------");
     }
-} while (usarItem.toLowerCase() === "sim" || usarItem.toLowerCase() === "s"); */
+} while (usarItem.toLowerCase() === "sim" || usarItem.toLowerCase() === "s");
 
 /* ---------------------------------------------------------------------------------- */
 
@@ -141,7 +141,7 @@ categorias como alimentação, transporte, lazer e saúde, cada uma com valor
 planejado e valor gasto. Use for...in para percorrer as categorias e exibir se cada
 uma ficou dentro ou acima do orçamento, e calcule o saldo geral do mês. */
 
-/* const orcamento = {
+const orcamento = {
     alimentacao: {
         previsto: 510,
         gasto: 600
@@ -178,7 +178,7 @@ for (const key in orcamento) {
 
 console.log(`Gastos previstos: R$${saldoPrevisto.toFixed(2)}`);
 console.log(`Gastos totais: R$${saldoReal.toFixed(2)}`);
-console.log(`Saldo de R$${(saldoPrevisto - saldoReal).toFixed(2)}`); */
+console.log(`Saldo de R$${(saldoPrevisto - saldoReal).toFixed(2)}`);
 
 /* ---------------------------------------------------------------------------------- */
 
@@ -187,7 +187,7 @@ duração em segundos. Use for...of para exibir cada música no formato "Artista
 Título (mm:ss)". Ao final, use forEach para somar a duração total e exiba-a no
 mesmo formato. */
 
-/* let album = [
+let album = [
     {titulo: "Beat It", artista: "Michael Jackson", duracao: 299},
     {titulo: "Shadow 4EVER", artista: "MC VV", duracao: 206},
     {titulo: "Sua Agonia", artista: "Enygma", duracao: 360},
@@ -206,7 +206,7 @@ album.forEach((a) => {
     somaSegundos += a.duracao;
 })
 
-console.log(`Tempo total ${String(parseInt(somaSegundos / 60)).padStart(2, '0')}:${String(somaSegundos % 60).padStart(2, '0')}`); */
+console.log(`Tempo total ${String(parseInt(somaSegundos / 60)).padStart(2, '0')}:${String(somaSegundos % 60).padStart(2, '0')}`);
 
 /* ---------------------------------------------------------------------------------- */
 
@@ -215,7 +215,7 @@ cada aluno (Aprovado, Recuperação ou Reprovado) e exibir o resultado. Use
 forEach para calcular e exibir separadamente a média dos aprovados e a média
 dos reprovados. */
 
-/* const alunos = [
+const alunos = [
     {nome: "Xepória Maria", nota: 7},
     {nome: "Manuela Christina", nota: 3},
     {nome: "Gregório Antônio", nota: 7},
@@ -255,7 +255,7 @@ alunos.forEach((a) => {
         counterAluno++;
     }
 });
-console.log(`Média dos alunos reprovados: ${(mediaReprovados / counterAluno).toFixed(2)}`); */
+console.log(`Média dos alunos reprovados: ${(mediaReprovados / counterAluno).toFixed(2)}`);
 
 /* ---------------------------------------------------------------------------------- */
 
@@ -264,7 +264,7 @@ Use forEach para calcular o valor total em estoque de cada produto (preço ×
 quantidade) e exibir um relatório. Ao final, exiba o valor total geral de todo o
 estoque. */
 
-/* const produtos = [
+const produtos = [
     {nome: "Notebook", preco: 3500.00, quantidade: 5},
     {nome: "Mouse", preco: 80.50, quantidade: 20},
     {nome: "Teclado", preco: 150.00, quantidade: 15},
@@ -282,7 +282,7 @@ produtos.forEach((p) => {
     precoTotal += p.preco * p.quantidade;
 })
 
-console.log(`Valor total do estoque: R$${precoTotal.toFixed(2)}`); */
+console.log(`Valor total do estoque: R$${precoTotal.toFixed(2)}`);
 
 /* ---------------------------------------------------------------------------------- */
 
@@ -291,7 +291,7 @@ telefone e e-mail. Use forEach para listar todos os contatos formatados. Permita
 buscar um contato pelo nome usando for...of e exiba os dados encontrados ou
 uma mensagem de "não encontrado". */
 
-/* const contatos = [
+const contatos = [
     { nome: "Ana Silva", telefone: "(51) 99911-2233", email: "ana.silva@gmail.com" },
     { nome: "Bruno Costa", telefone: "(51) 99822-3344", email: "bruno.costa@gmail.com" },
     { nome: "Carla Souza", telefone: "(51) 99733-4455", email: "carla.souza@gmail.com" },
@@ -326,7 +326,7 @@ while (opcaoPesquisa.toLowerCase() == "sim" || opcaoPesquisa.toLowerCase() == "s
         console.log("Não encontrado");
     }
     opcaoPesquisa = prompt("Deseja procurar outro contato? ");
-} */
+}
 
 /* ---------------------------------------------------------------------------------- */
 
@@ -335,6 +335,37 @@ navegador. Crie as funções visitar(pagina) (push), voltar() (pop) e paginaAtua
 (peek). Simule uma sessão: visite 4 páginas, volte 2 vezes e exiba a página atual a
 cada operação. */
 
+let navegador = ["Página Inicial"];
+
+function visitarPagina (value) {
+    navegador.push(value);
+}
+
+function voltarPagina() {
+    if (navegador.length > 1) {
+        navegador.pop();
+    } else {
+        console.log("Não é mais possível voltar");
+    }
+}
+
+function exibirPaginaAtual() {
+    console.log(`Você está vendo a página "${navegador[navegador.length - 1]}"`);
+}
+
+visitarPagina("Amazon");
+exibirPaginaAtual();
+visitarPagina("Youtube");
+exibirPaginaAtual();
+visitarPagina("Instagram");
+exibirPaginaAtual();
+visitarPagina("Panini");
+exibirPaginaAtual();
+voltarPagina();
+exibirPaginaAtual();
+voltarPagina();
+exibirPaginaAtual();
+
 /* ---------------------------------------------------------------------------------- */
 
 /* 11. Implemente uma fila usando um array para simular o atendimento de uma
@@ -342,11 +373,126 @@ clínica. Crie as funções chegarPaciente(nome) (enqueue), chamarProximo()
 (dequeue) e exibirFila(). Simule a chegada de 5 pacientes e o atendimento de 3,
 exibindo o estado da fila a cada operação. */
 
+let filaClinica = [];
+
+function chegouPaciente(value) {
+    filaClinica.push(value);
+}
+
+function chamarProximo() {
+    if (filaClinica.length === 0) {
+        console.log("Não tem ninguém na fila");
+    } else {
+        filaClinica.shift();
+    }
+}
+
+function exibirFila() {
+    filaClinica.forEach((p, index) => {
+        console.log(`${index + 1}º paciente: ${p}`);
+    })
+    console.log("------------------------");
+}
+
+chegouPaciente("Antônio Roberto");
+exibirFila();
+chegouPaciente("Roberval");
+exibirFila();
+chegouPaciente("Steve Trabalhos");
+exibirFila();
+chamarProximo();
+exibirFila();
+chegouPaciente("Codifica Edu");
+exibirFila();
+chegouPaciente("Eduardo Fonseca");
+exibirFila();
+chamarProximo();
+exibirFila();
+chamarProximo();
+exibirFila();
+
 /* ---------------------------------------------------------------------------------- */
 
 /* 12. Implemente uma lista ligada simples usando nós ({ valor, proximo }). Crie as
 funções adicionar(tarefa), remover(tarefa) e exibir() que percorre todos os nós.
 Simule um gerenciador de tarefas: adicione 4 tarefas, remova uma pelo nome e
 exiba a lista antes e depois. */
+
+class Node {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
+    }
+}
+
+class LinkedList {
+    constructor() {
+        this.head = null;
+        this.length = 0;
+    }
+
+    adicionar(value) {
+        let newNode = new Node(value);
+        if (this.length === 0) {
+            this.head = newNode
+        } else {
+            let lastNode = this.head;
+
+            while (lastNode.next != null) {
+                lastNode = lastNode.next;
+            }
+
+            lastNode.next = newNode;
+        }
+
+        this.length++;
+
+    }
+
+    remover(value) {
+        if (this.length > 0) {
+            if (this.head.value == value) {
+                if (this.length === 1) {
+                    this.head = null;
+                } else {
+                    this.head = this.head.next;
+                }
+                this.length--;
+                return;
+            } else {
+                for (let i = this.head; i != null; i = i.next) {
+                    if (i.next != null && i.next.value == value) {
+                        i.next = i.next.next;
+                        this.length--;
+                        return;
+                    }
+                }
+            }
+        } else {
+            console.log("A lista já está vazia");
+        }
+    }
+
+    exibir() {
+        console.log("---------------------------------");
+        for (let i = this.head; i != null; i = i.next) {
+            console.log(`${i.value}`);
+        }
+        console.log("---------------------------------\n");
+    }
+}
+
+let lista = new LinkedList();
+
+lista.adicionar("Visual Studio Code");
+lista.adicionar("Microsoft Edge");
+lista.adicionar("Node");
+lista.adicionar("Steam");
+
+lista.exibir();
+
+lista.remover("Steam");
+
+lista.exibir();
 
 /* ---------------------------------------------------------------------------------- */

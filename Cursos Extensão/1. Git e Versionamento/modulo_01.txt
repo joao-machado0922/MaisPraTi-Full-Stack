@@ -39,3 +39,5 @@ git status
 git add (file) | git add .
 git rm --cached (file)
 git commit -m "(mensagem)"
+git log
+git checkout (código de commit)
