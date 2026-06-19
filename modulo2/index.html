@@ -1,104 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nicolau Store</title>
-    <style>
-      table,
-      tr,
-      td {
-        border: 1px solid;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarim Diário</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            Clarim Diário
+        </div>
+        <nav class="navegacao">
+            <a href="#">Política</a>
+            <a href="#">Economia</a>
+            <a href="#">Esportes</a>
+            <a href="#">Homem-Aranha</a>
+        </nav>
+    </header>
+    <main class="principal">
+        <article class="destaque">
+            <span class="categoria">Homem-Aranha</span>
+            <h1>
+                Homem-Aranha é visto de máscara!        
+            </h1>
+            <p class="resumo">
+                Na ponte Manhattan Homem-Aranha é visto batendo em um senhor de 6 braços.
+            </p>
+            <div class="meta">
+                <span>Por J. Jonah Jameson</span>
+                <span>17 de Junho de 2026</span>
+            </div>
+        </article>
 
-      td {
-        padding: 5px;
-      }
+        <section class="grade-noticias">
+            <article class="cartao">
+                <span class="categoria">Economia</span>
+                <h2>Dólar despenca e volta a ser R$ 2</h2>
+                <p>Mercado reage à eleição de Wilson Fisk como prefeito de Nova York, declarando apoio total ao Presidente Capitão Pátria.</p>
+            </article>
 
-      p, img {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
+            <article class="cartao">
+                <span class="categoria">Política</span>
+                <h2>Luz-estrelistas são vistos acenando para as estrelas</h2>
+                <p>Em manifestação as declarações de Profundo, que disse que os peixes estão morrendo afogados.</p>
+            </article>
 
-      img {
-        width: 100px;
-        margin: 4px;
-      }
-
-      img:hover {
-        width: 105px;
-      }
-
-      form {
-        font-family: sans-serif;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100px;
-        height: 125px;
-        background-color: rgb(236, 255, 253);
-        border-radius: 1rem;
-        padding: 1rem;
-        border: 1px solid grey;
-        margin: 1rem;
-      }
-
-      input {
-        margin: 10px 0px;
-      }
-
-      button {
-        background-color: blue;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        width: 15%;
-        font-size: 16px;
-      }
-
-      button:hover {
-        width: 17%;
-        height: auto;
-      }
-
-    </style>
-  </head>
-  <body>
-    <h1>Lojinha do Balacobaco</h1>
-    <h2>Nossos produtos:</h2>
-    <form action="">
-      <label>Nome Completo:</label>
-      <input type="text" placeholder="Digite seu nome">
-      <label>Senha:</label>
-      <input type="password" placeholder="Digite sua senha">
-      <button type="submit">Login</button>
-    </form>
-    <progress value="75" max="100"></progress>
-    <table>
-      <tr>
-        <th>Produto</th>
-        <th>Valor</th>
-        <th>Categoria</th>
-      </tr>
-      <tr>
-        <td><img src="assets/camisa_gremio.png" alt="Camiseta do Grêmio" /></td>
-        <td><p>R$ 125,99</p></td>
-        <td><p>Item de luxo</p></td>
-      </tr>
-      <tr>
-        <td><img src="assets/nintendo_3ds.png" alt="Nintendo 3DS" /></td>
-        <td><p>R$ 2.500,00</p></td>
-        <td><p>Raridade</p></td>
-      </tr>
-      <tr>
-        <td><img src="assets/camisa_inter.png" alt="Camiseta do Inter" /></td>
-        <td><p>R$ 20,00</p></td>
-        <td><p>Pano de chão</p></td>
-      </tr>
-    </table>
-    
-  </body>
+            <article class="cartao">
+                <span class="categoria">Esportes</span>
+                <h2>Time do New York Cats vence estadual de Nova York</h2>
+                <p>Flash Thompson levanta o troféu e beija sua amada Mary Jane. Fotógrafo Peter Parker trás todas as imagens e cobertura.</p>
+            </article>
+        </section>
+    </main>
+    <aside class="menu-lateral">
+        <h3>Mais lidas</h3>
+        <ol>
+            <li>O que muda agora que todos sabem que Billy Butcher morreu?</li>
+            <li>Batman é visto com a Catwoman em telhado</li>
+            <li>Estreando no mundo da moda, Harley Queen destrói o palco</li>
+            <li>Goku revive pela 6 vez</li>
+        </ol>
+    </aside>
+    <footer class="rodape">
+        <p>&copy; 2026 Clarim Diário - Desenvolvido por Max Steel</p>
+    </footer>
+</body>
 </html>
