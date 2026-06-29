@@ -1,3 +1,4 @@
+//01 - Introdução
 Por que utilizar?
 - Velocidade no desenvolvimento
 - Experimentação
@@ -12,6 +13,7 @@ Controle de versão de código é um tipo de registro de banco de dados especial
 Plataformas: GitHub, BitBucket, SourceForge, TaraVault, Dogs, GitBucket
 
 ---------------------------------------------------------------------------------
+//03 - Funcionamento do Git
 
 git init
 touch (arquivo)
@@ -23,9 +25,10 @@ mkdir (pasta)
 Blob -> todo tipo de arquivo
 Árvores -> diretórios/pastas
 Commits -> Versões salvas
-Annotated Tags -> 
+Annotated Tags ->
 
 ---------------------------------------------------------------------------------
+//04 - Operações Básicas
 
 Untracked - Recém adicionado ou removido, git não reconhece
 Unmodified - Arquivo não modificado
@@ -41,3 +44,15 @@ git rm --cached (file)
 git commit -m "(mensagem)"
 git log
 git checkout (código de commit)
+
+----------------------------------------------------------------------------------
+//05 - Branches e head
+
+Quando cria um commit novo o head muda para o novo commit
+
+----------------------------------------------------------------------------------
+//07 - Repositórios Remotos
+
+git push - Envia tudo do repositório local para o remoto
+git pull - Pega tudo do repositório remoto para o local
+git fetch - Mesma coisa do "git pull", mas não coloca no working directory
