@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,51 +8,28 @@
     <link rel="stylesheet" href="../../css/main.css">
     <script src="../components/site-header.js"></script>
     <script src="../components/site-footer.js"></script>
-    <script type="module" src="teste.js"></script>
+    <script type="module" src="../pages/login.js"></script>
 </head>
+
 <body>
     <site-header></site-header>
     <main class="auth">
-        <form id="form-cadastro" class="formulario">
-            <h1>Criar conta</h1>
+        <form id="form-login" class="formulario">
+            <h1>Entrar</h1>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
 
-            <label for="cep">CEP</label>
-            <input type="text" id="cepTeste" placeholder="00000-000" maxlength="8" required>
-
-            <div class="linha">
-                <div class="campo-largo">
-                    <label for="logradouro">Rua</label>
-                    <input type="text" id="logradouro" disabled>
-                </div>
-
-                <div class="campo-curto">
-                    <label for="numero">Número</label>
-                    <input type="text" id="numero" disabled>
-                </div>
-            </div>
-
-            <label for="bairro">Bairro</label>
-            <input type="text" id="bairro" disabled>
-
-            <div class="linha">
-                <div class="campo-largo">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" disabled>
-                </div>
-
-                <div class="campo-curto">
-                    <label for="uf">UF</label>
-                    <input type="text" id="uf" maxlength="2" disabled>
-                </div>
-            </div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required>
 
             <p class="aviso" id="aviso"></p>
-            <button type="submit" id="buttonCEP" class="btn btn--primary">Cadastrar</button>
 
-            <p class="rodape-form">Já tem conta? <a href="login.html">Entrar</a></p>
+            <button type="submit" class="btn btn--primary">Entrar</button>
 
+            <p class="rodape-form">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
         </form>
     </main>
     <site-footer></site-footer>
 </body>
+
 </html>
