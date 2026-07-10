@@ -1,0 +1,9 @@
+:root {
+    --tint: #111111;
+    --paper: #f7f4ec;
+    --urgent: #b3001b;
+    --subtitle-grey: #5d5a52;
+
+    --font-headline: Georgia, 'Times New Roman', serif;
+    --font-ui: Arial, Helvetica, sans-serif;
+}
