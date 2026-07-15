@@ -1,0 +1,35 @@
+.manchete {
+    margin: 24px 0;
+}
+
+.manchete .card {
+    border-width: 3px;
+    padding: 32px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.manchete .card:hover {
+    border-color: var(--urgent);
+    transform: scale(1.02);
+    transition: transform 0.1s ease;
+}
+
+.grade .card:hover {
+    border-color: var(--urgent);
+    transition: transform 0.1s ease;
+    border-width: 2px;
+}
+
+.manchete .card_titulo {
+    font-size: 40px;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+}

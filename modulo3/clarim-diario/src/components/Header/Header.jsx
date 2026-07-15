@@ -18,7 +18,7 @@ function Header() {
                 <span>U$ 1.50</span>
             </div>
             <h1 className="cabecalho_titulo">O CLARIM DIÁRIO</h1>
-            <p className="cabecalho_lema">A verdade doa a quem doer - Inclusive a certos aracnídeos</p>
+            <p className="cabecalho_lema">A verdade, doa a quem doer - Inclusive a certos aracnídeos</p>
 
             <nav className="cabecalho_menu">
                 <a href="">Cidade</a>
