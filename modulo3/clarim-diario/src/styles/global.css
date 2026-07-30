@@ -9,6 +9,7 @@ body {
     background: var(--paper);
     color: var(--tint);
     line-height: 1.6;
+    transition: background 0.3s color 0.3s;
 }
 
 .container {

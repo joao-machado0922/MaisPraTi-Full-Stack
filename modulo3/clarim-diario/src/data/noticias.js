@@ -23,4 +23,10 @@ export const noticias = [
         titulo: "Wilson Fisk se assume para a cidade",
         resumo: "Wilson Fisk se assume LGBT e diz que rebola lentinho para os crias."
     },
+    {
+        id: 5,
+        categoria: "Famosos",
+        titulo: "Matthew Murdock se torna juíz",
+        resumo: "Matthew Murdock, a.k.a Matt, se torna juíz depois de 20 anos de estudos, ao realizar o feito, seu primeiro depoimento foi feito: 'Com quantos paus se faz uma canoa?'."
+    },
 ]

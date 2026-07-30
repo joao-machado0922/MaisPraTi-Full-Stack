@@ -7,3 +7,10 @@
     --font-headline: Georgia, 'Times New Roman', serif;
     --font-ui: Arial, Helvetica, sans-serif;
 }
+
+[data-theme="dark"] {
+    --tint: #e8e4d8;
+    --paper: #191817;
+    --urgent: #ff5468;
+    --subtitle-grey: #a5a196;
+}
