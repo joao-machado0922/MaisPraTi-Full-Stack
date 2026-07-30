@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import './App.css';
+import Materia from './pages/Materia/Materia';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
       <Header tema={theme} aoAlterarTema={alternarTema} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/materia/:id" element={<Materia />} />
       </Routes>
     </>
   )

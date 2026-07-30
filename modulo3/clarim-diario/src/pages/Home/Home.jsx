@@ -9,12 +9,12 @@ function Home() {
         <main className="container">
 
             <section className="manchete">
-                <NewsCard categoria={manchete.categoria} titulo={manchete.titulo} resumo={manchete.resumo} />
+                <NewsCard id={manchete.id} categoria={manchete.categoria} titulo={manchete.titulo} resumo={manchete.resumo} />
             </section>
 
             <section className="grade">
                 {demais.map((noticia) => (
-                    <NewsCard key={noticia.id} categoria={noticia.categoria} titulo={noticia.titulo} resumo={noticia.resumo} />
+                    <NewsCard key={noticia.id} id={noticia.id} categoria={noticia.categoria} titulo={noticia.titulo} resumo={noticia.resumo} />
                 ))}
             </section>
 
