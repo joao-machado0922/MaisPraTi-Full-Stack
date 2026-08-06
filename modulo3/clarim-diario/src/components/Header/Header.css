@@ -15,6 +15,29 @@
     padding-bottom: 6px;
 }
 
+.cabecalho_sessao a {
+    color: var(--tint);
+}
+
+.cabecalho_entrar {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--urgent);
+    text-decoration: none;
+}
+
+.cabecalho_sair {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    background: none;
+    border: none;
+    color: var(--urgent);
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+}
+
 .cabecalho_titulo {
     text-align: center;
     font-style: italic;
