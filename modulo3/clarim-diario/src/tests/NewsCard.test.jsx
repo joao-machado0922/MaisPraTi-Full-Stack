@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import NewsCard from './NewsCard';
+import NewsCard from '../components/NewsCard/NewsCard';
 
 describe('NewsCard', () => {
     it('mostra a categoria e título recebidos por props', () => {
@@ -11,5 +11,15 @@ describe('NewsCard', () => {
         )
         expect(screen.getByText("Cidade")).toBeInTheDocument();
         expect(screen.getByText("Metrô terá horário estendido")).toBeInTheDocument();
+    })
+
+    it('não mostra parágrafo de resumo quando a prop não vem', () => {
+        render(
+            <MemoryRouter>
+                <NewsCard id={1} categoria="Esportes" titulo="Knicks vencem" />
+            </MemoryRouter>
+
+        )
+        expect(screen.queryByText(/Madison/)).not.toBeInTheDocument();
     })
 })
