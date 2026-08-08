@@ -1,26 +1,28 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 function Footer() {
+
+    const ano = new Date().getFullYear()
+
     return (
-        <footer>
-            <div className="footer_info">
-                <h4><strong>Clarim Diário</strong></h4>
-                <p>Alta credibilidade, Dirigo J. Jonah Jameson</p>
-            </div>
-            <div className="footer_info">
-                <h4>Editoriais</h4>
-                <a href="">Política</a>
-                <a href="">Cultura</a>
-                <a href="">Esportes</a>
-                <a href="">Homem-Aranha</a>
-            </div>
-            <div className="footer_info">
-                <h4>Institucional</h4>
-                <a href="">Termos de Uso</a>
-                <a href="">Privacidade</a>
-                <a href="">Quem Somos</a>
-                <a href="">Contato</a>
-            </div>
+        <footer className="rodape">
+
+            <p className="rodape_marca">O Clarim Diário</p>
+            <p className="rodape_fundacao">Nova York · Fundado em 1897</p>
+
+            <nav className="rodape_links">
+                <Link to="/">Capa</Link>
+                <a href="#">Expediente</a>
+                <a href="#">Anuncie</a>
+                <a href="#">Privacidade</a>
+                <Link to="/cadastro">Assine</Link>
+            </nav>
+
+            <p className="rodape_creditos">
+                © {ano} O Clarim Diário. Todos os direitos reservados.
+                Opiniões sobre vigilantes mascarados são de inteira responsabilidade do editor-chefe.
+            </p>
         </footer>
     )
 }
