@@ -1,56 +1,63 @@
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
 
-        Exercicio01 exec = new Exercicio01();
+//        List<String> compras = new ArrayList<>();
+//
+//        compras.add("Arroz");
+//        compras.add("Feijão");
+//        compras.add("Macarrão");
+//        System.out.println(compras.toString());
+//        compras.remove("Feijão");
+//        System.out.println(compras.toString());
 
-        //exec.exercícios();
+//        Set<String> visitantes = new HashSet<>();
+//
+//        visitantes.add("João");
+//        visitantes.add("Maria");
+//        visitantes.add("José");
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.nome = "Nicolau";
-        pessoa.idade = 26;
+//        Map<String, Integer> idades = new HashMap<>();
+//
+//        idades.put("João", 25);
+//        idades.put("Maria", 03);
+//        idades.put("José", 40);
+//
+//        for(String nome : idades.keySet()) {
+//            System.out.println(nome);
+//        }
+//
+//        for(Integer idade : idades.values()) {
+//            System.out.println(idade);
+//        }
+//
+//        for(Map.Entry<String, Integer> par : idades.entrySet()) {
+//            System.out.println(par.getKey() + par.getValue());
+//        }
 
-        pessoa.apresentar("brasileiro");
+//        List<Integer> numeros = List.of(1,2,3,4,5);
+//
+//        int soma = numeros.stream().filter(n -> n % 2 == 0).mapToInt(n -> n * 2).sum();
+//        System.out.println(soma);
+        //Stream (Fonte) -> Filter (seleção) -> map(transforma) -> collect(encerra)
+        //Lambda - Uma função curta, que ela é escrita no seu lugar de uso.
 
+        List<String> palavras = List.of("Java", "Phyton", "C++", "JavaScript");
 
+        palavras.stream().filter(p -> p.length() > 4).forEach(System.out::println);
+        palavras.stream().map(String::toUpperCase).forEach(System.out::println);
 
-        /*
-        * int mes = 1;
+        //Usando Streams, a partir de 'palavras' criem um outro array que armazena o tamanho de cada palavra
+        List<Integer> tamanhos = palavras.stream().map(String::length).toList();
+        tamanhos.forEach(System.out::println);
 
-        String estacao = switch (mes) {
-            case 12, 1, 2 -> "Verão";
-            case 3, 4, 5 -> "Outono";
-            case 6, 7, 8 -> "Inverno";
-            case 9, 10, 11 -> "Primavera";
-            default -> "mês Inválido";
-        };
+        //List<Integer> de 1 a 20, imprima só os múltiplos de 3
+        List<Integer> a = List.of(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
+        a.stream().filter(n -> n % 3 == 0).forEach(System.out::println);
 
-        System.out.println(estacao);
-
-        int tentativa = 0;
-
-        do {
-            tentativa++;
-            System.out.println("Tentativa: " + tentativa);
-        } while (tentativa < 3);
-
-        for (int i = 0; i <= 10; i++) {
-            System.out.println(i);
         }
-
-        int[] numeros = new int[]{10, 20, 30};
-
-        String[] cores = {"Azul", "Branco", "Preto"};
-
-        for (String cor : cores) {
-            System.out.println(cor);
-        }*/
-
-
-
-    }
     /*
     Tipos Primitivos -> São 8, byte, short, int, float...
     Tipos por Referência -> Guardam o endereço de um objeto. String, Arrays...
